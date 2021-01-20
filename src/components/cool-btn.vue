@@ -3,14 +3,15 @@
     <span class="circle" aria-hidden="true">
       <span class="icon arrow"></span>
     </span>
-    <span class="button-text">Change View</span>
+    <span class="button-text">{{ buttonText }}</span>
   </button>
 </template>
 <script lang="ts">
-import {Component, Vue} from 'vue-property-decorator';
+import {Component, Prop, Vue} from 'vue-property-decorator';
 
 @Component({})
 export default class CoolBtn extends Vue {
+  @Prop({type: String, default: 'Learn More'}) public buttonText!: string;
 
   public onClick(): void {
     this.$emit('click')
@@ -116,6 +117,10 @@ button {
     .button-text {
       color: $white;
     }
+  }
+
+  &:focus {
+    outline: none !important;
   }
 }
 </style>

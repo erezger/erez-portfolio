@@ -11,16 +11,20 @@ Vue.use(Vuex);
 
 export interface LibraryState {
   libraryItems: LibraryItemModel[];
+  filteredLibraryList: LibraryItemModel[];
   groupedList: GroupListModel;
   isListView: boolean;
+  sortType: string;
 }
 
 // message state model init
 export const initialState = (): LibraryState => {
   return {
     libraryItems: [],
+    filteredLibraryList: [],
     groupedList: {} as GroupListModel,
     isListView: false,
+    sortType: 'ASC',
   };
 };
 

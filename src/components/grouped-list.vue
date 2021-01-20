@@ -1,7 +1,8 @@
 <template>
   <div class="grouped-list-container">
     <div class="group_card">
-      <div class="group_name" v-for="(item, name) of list" :key="name">
+      <div class="group_name" v-for="(item, name) of list" :key="name"
+           @click="event => $emit('item-clicked', name, event)">
         <h4><span> {{ name }} ({{ item }}) </span></h4>
       </div>
     </div>

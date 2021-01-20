@@ -13,4 +13,8 @@ export default class LibraryService {
   public getLibraryItems(): Observable<BaseResponse<LibraryItemModel>> {
     return $httpClient.get(this.baseApi);
   }
+
+  public updateLibraryListItem(item: LibraryItemModel): Observable<boolean> {
+    return $httpClient.put('update item url', item);
+  }
 }
