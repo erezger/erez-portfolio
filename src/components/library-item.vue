@@ -29,6 +29,7 @@ export default class LibraryItem extends Vue {
   public editTitle: boolean = false;
 
   public imageLoadError(event): void {
+    event.target.src = require('../assets/images/no-image.png')
     this.noImage = true;
   }
 
