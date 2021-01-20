@@ -1,5 +1,5 @@
 <template>
-  <table class="table table-image" :class="{'no-image': noImage}">
+  <table class="table table-image">
     <thead>
     <tr>
       <th scope="col"></th>
