@@ -36,6 +36,7 @@ export default class GridView extends Vue {
   @Prop(Array) public list!: LibraryItem[];
 
   public imageLoadError(event): void {
+    event.target.src = require('../assets/images/no-image.png');
     event.target.classList.add('no-image')
   }
 }
