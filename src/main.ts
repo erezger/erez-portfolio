@@ -14,17 +14,6 @@ import '@/js/particles.js';
 import '@/js/particles.min.js';
 import '@/js/index.js';
 import Notifications from 'vue-notification';
-import ListView from '@/components/list-view.vue';
-import LibraryItem from '@/components/library-item.vue';
-import GroupedList from '@/components/grouped-list.vue';
-import CoolBtn from '@/components/cool-btn.vue';
-import GridView from '@/components/grid-view.vue';
-
-Vue.component('list-view', ListView);
-Vue.component('grid-view', GridView);
-Vue.component('library-item', LibraryItem);
-Vue.component('grouped-list', GroupedList);
-Vue.component('cool-btn', CoolBtn);
 
 Vue.use(Notifications);
 

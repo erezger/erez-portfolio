@@ -18,7 +18,7 @@ import {LibraryItemModel} from '@/models/library-item.model';
 import {FilterObjModel} from '@/models/filter-obj.model';
 
 @Component({})
-export default class LibraryComponent extends Vue {
+export default class AboutComponent extends Vue {
 
   @Action(GET_LIBRARY_LIST, StoreNamespace.LIBRARY) public getLibraryList: () => void;
   @Action(SORT_LIBRARY_LIST, StoreNamespace.LIBRARY) public sortLibraryList: () => void;
