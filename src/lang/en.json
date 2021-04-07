@@ -1,7 +1,7 @@
 {
   "DIR": "ltr",
-  "REVIEW": {
-    "TITLE": "User Reviews",
-    "ADD": "Add"
+  "GENERAL": {
+    "FIRST_NAME": "Erez",
+    "LAST_NAME": "Gershon"
   }
 }

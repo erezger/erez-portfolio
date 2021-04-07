@@ -1,8 +1,7 @@
 {
   "DIR": "rtl",
-  "REVIEW": {
-    "TITLE": "User Reviews",
-    "ADD": "Add",
-    "SAVE": "Save"
+  "GENERAL": {
+    "FIRST_NAME": "Erez",
+    "LAST_NAME": "Gershon"
   }
 }
