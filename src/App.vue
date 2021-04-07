@@ -26,10 +26,14 @@
         <span class="close-second"></span>
       </div>
       <div class="navigation-links">
-        <a href="#" data-text="HOME" id="home-link">HOME</a>
-        <a href="#" data-text="ABOUT" id="about-link">ABOUT</a>
-        <a href="#" data-text="PORTFOLIO" id="portfolio-link">PORTFOLIO</a>
-        <a href="#" data-text="CONTACT" id="contact-link">CONTACT</a>
+        <!--        <a href="#" data-text="HOME" id="home-link">HOME</a>-->
+        <!--        <a href="#" data-text="ABOUT" id="about-link">ABOUT</a>-->
+        <!--        <a href="#" data-text="PORTFOLIO" id="portfolio-link">PORTFOLIO</a>-->
+        <!--        <a href="#" data-text="CONTACT" id="contact-link">CONTACT</a>-->
+        <router-link to="home" id="home-link">HOME</router-link>
+        <router-link to="about" id="about-link">ABOUT</router-link>
+        <router-link to="portfolio" id="portfolio-link">PORTFOLIO</router-link>
+        <router-link to="contact" id="contact-link">CONTACT</router-link>
       </div>
     </div>
     <router-view/>

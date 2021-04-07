@@ -1,37 +1,105 @@
-<div class="home-page page" dir="ltr">
-    <div class="row pt-4">
-        <div class="offset-3 col-auto">
-            <div class="input-group rounded mb-3">
-                <input type="text" class="form-control rounded" placeholder="search..." aria-label="search"
-                       aria-describedby="search-addon"
-                       v-model="searchQuery"
-                       @input="onSearch"
-                >
-                <span class="input-group-text border-0" id="search-addon">
-                    <i class="fas fa-search"></i>
-                </span>
+<div class="portfolio-page page">
+    <!--portfolio-->
+    <div id="portfolio">
+        <div class="color-changer">
+            <div class="color-panel">
+                <img src="../../assets/images/gear.png" alt="">
             </div>
-            <cool-btn @click="refreshView" class="mt-4" button-text="Refresh"></cool-btn>
-            <cool-btn @click="clearView" class="mt-4" button-text="Clear"></cool-btn>
-            <cool-btn @click="sort" class="mt-4" button-text="Sort"></cool-btn>
+            <div class="color-selector">
+                <div class="heading">Custom Colors</div>
+                <div class="colors">
+                    <ul>
+                        <li>
+                            <a href="#0" class="color-red " title="color-red"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-purple" title="color-purple"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-malt" title="color-malt"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-green" title="color-green"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-blue" title="color-blue"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-orange" title="color-orange"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        <div class="portfolio-header"><span class="color"> My </span> Portfolio
+            <span class="header-caption"> Some Of My <span class="color"> Works</span></span></div>
+        <div id="portfolio-content">
+            <div class="portfolio portfolio-first">
+                <div class="portfolio-image">
+                    <img src="../../assets/images/portfolio-first.jpg" alt="portfolio-first">
+                </div>
+                <div class="portfolio-text">
+                    <h2>App Idea</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate
+                        expedita eius dignissimos. Id cumque placeat minima ad laudantium suscipit voluptatem
+                        ducimus</p>
+                    <div class="button"><a href="#">
+                        <button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button>
+                    </a></div>
+                </div>
+            </div>
+            <div class="portfolio portfolio-second">
+                <div class="portfolio-image">
+                    <img src="../../assets/images/portfolio-second.jpg" alt="portfolio-second">
+                </div>
+                <div class="portfolio-text">
+                    <h2>Web Designing</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id cumque placeat minima ad laudantium
+                        suscipit
+                        voluptatem ducimus. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
+                    <div class="button"><a href="#">
+                        <button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button>
+                    </a></div>
+                </div>
+            </div>
+
+            <div class="portfolio portfolio-third">
+                <div class="portfolio-image">
+                    <img src="../../assets/images/portfolio-third.jpg" alt="portfolio-third">
+                </div>
+                <div class="portfolio-text">
+                    <h2>UI Designing</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate
+                        expedita eius dignissimos
+                        .. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
+                    <div class="button"><a href="#">
+                        <button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button>
+                    </a></div>
+                </div>
+            </div>
+            <div class="portfolio portfolio-fourth">
+                <div class=" portfolio-image">
+                    <img src="../../assets/images/portfolio-fourth.jpg" alt="portfolio-fourth">
+                </div>
+                <div class="portfolio-text">
+                    <h2>Wow Graphics</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate
+                        expedita eius dignissimos. Id cumque placeat minima ad laudantium suscipit voluptatem
+                        ducimus</p>
+                    <div class="button"><a href="#">
+                        <button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button>
+                    </a></div>
+                </div>
+            </div>
+        </div>
+        <!--copyright-section You Can Remove After Downloading-->
+        <div class="footer">
+            <div class="footer-text">
+                <img src="../../assets/images/copyright.png" alt="copyright-img" class="images" height="14px"> Willy
+                Wonkas
+            </div>
+        </div>
+        <!--copyright-section-->
     </div>
-    <div class="row pt-4">
-        <div class="col-3">
-            <grouped-list :list="groupedList" @item-clicked="onGroupedItemClicked"></grouped-list>
-            <cool-btn @click="changeView" class="mt-4" button-text="Change View"></cool-btn>
-        </div>
-        <div class="col-9">
-            <list-view v-if="isListView" :list="filteredLibraryList"
-                       @on-library-item-clicked="onLibraryItemClicked"
-                       @update-item-title="updateItemTitle"
-            >
-            </list-view>
-            <grid-view v-else :list="filteredLibraryList"
-                       @on-library-item-clicked="onLibraryItemClicked"
-                       @update-item-title="updateItemTitle"
-            >
-            </grid-view>
-        </div>
-    </div>
+    <!--portfolio end-->
 </div>
