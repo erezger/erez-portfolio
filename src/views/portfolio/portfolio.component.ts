@@ -64,6 +64,10 @@ export default class PortfolioComponent extends Vue {
     this.filterLibraryList({type: 'type', value: name});
   }
 
+  public onGroupedItemBeforeClicked(name): void {
+    this.filterLibraryList({type: 'type', value: name});
+  }
+
   public onLibraryItemClicked(item: LibraryItemModel): void {
     this.$router.push({name: 'item', params: {imdbId: item.imdbId}});
   }
